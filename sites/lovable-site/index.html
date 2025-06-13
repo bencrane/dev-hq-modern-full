@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Modern Full</title>
 
@@ -11,8 +10,22 @@
     <script>
       window.plausible = window.plausible || function () {
         (window.plausible.q = window.plausible.q || []).push(arguments);
-      }
+      };
     </script>
+
+    <!-- ✅ Meta: No preview image, no fallback -->
+    <meta property="og:title" content="Modern Full" />
+    <meta property="og:description" content="Modern Tools. Full Infrastructure" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://modernfull.com" />
+    <meta property="og:image" content="https://via.placeholder.com/1x1/000000/000000" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Modern Full" />
+    <meta name="twitter:description" content="Modern Tools. Full Infrastructure." />
+
+    <!-- Explicitly suppress favicon fallback -->
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
   </head>
   <body>
     <div id="root"></div>
